@@ -47,7 +47,8 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Pin docutils to version smaller 0.15. Otherwise we run into https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=839299
-RUN pip install --user cpp-coveralls \
-    pip install --user 'docutils<=0.14' \
-    pip install --user sphinx_rtd_theme \
-    pip install --user cpplint
+RUN pip install --user \
+	cpp-coveralls \
+	'docutils<=0.14' \
+	sphinx_rtd_theme \
+	cpplint
