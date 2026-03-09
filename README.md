@@ -1,9 +1,15 @@
 # open62541-ci
-Repository containing Docker files for build images used in CI (e.g. Azure Pipelines)
 
-All the docker images will automatically be built by Docker Cloud and then used by new builds:
-https://cloud.docker.com/u/open62541/repository/docker/open62541/open62541-ci
+Docker images used by the [open62541](https://github.com/open62541/open62541) CI/CD pipelines.
 
-## Repository structure
+Images are automatically built and pushed to `ghcr.io/open62541/ci` via GitHub Actions on every push to `master` and on a weekly schedule.
 
-Currently the repository is sturctured in folders which map to the version of open62541.
+## Images
+
+| Tag | Base |
+|-----|------|
+| `ubuntu-20.04` | Ubuntu 20.04 |
+| `ubuntu-22.04` | Ubuntu 22.04 |
+| `ubuntu-24.04` | Ubuntu 24.04 |
+
+Each image comes pre-installed with the common build toolchain (`build-essential`, `cmake`, `check`, `python3-sphinx`, etc.) and a non-root `ci` user with passwordless sudo.
