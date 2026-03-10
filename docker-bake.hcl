@@ -10,7 +10,7 @@ target "default" {
     ]
   }
 
-  tags = ["ghcr.io/open62541/ci:${base.image}-${base.version}"]
+  tags = ["ghcr.io/open62541/open62541-ci:${base.image}-${base.version}"]
 
   cache-from = ["type=gha,scope=${base.image}-${base.version}"]
   cache-to   = ["type=gha,mode=max,scope=${base.image}-${base.version}"]
