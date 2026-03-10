@@ -8,6 +8,7 @@ Images are automatically built and pushed to `ghcr.io/open62541/open62541-ci` vi
 
 | Tag | Base |
 |-----|------|
+| `ubuntu-18.04` | Ubuntu 18.04 |
 | `ubuntu-20.04` | Ubuntu 20.04 |
 | `ubuntu-22.04` | Ubuntu 22.04 |
 | `ubuntu-24.04` | Ubuntu 24.04 |
