@@ -2,7 +2,7 @@
 
 Docker images used by the [open62541](https://github.com/open62541/open62541) CI/CD pipelines.
 
-Images are automatically built and pushed to `ghcr.io/open62541/ci` via GitHub Actions on every push to `master` and on a weekly schedule.
+Images are automatically built and pushed to `ghcr.io/open62541/open62541-ci` via GitHub Actions on every push to `master` and on a weekly schedule.
 
 ## Images
 
