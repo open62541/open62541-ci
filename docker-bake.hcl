@@ -23,7 +23,7 @@ target "default" {
           sudo git build-essential cmake curl pkg-config \
           libssl-dev python3-sphinx graphviz check \
           libxml2-dev libpcap-dev libreadline-dev \
-          libcap2-bin ca-certificates && \
+          libcap2-bin ca-certificates gnupg && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* && \
         useradd --uid 1001 ci && \
