@@ -7,6 +7,7 @@ target "default" {
       { image = "ubuntu", version = "20.04" },
       { image = "ubuntu", version = "22.04" },
       { image = "ubuntu", version = "24.04" },
+      { image = "ubuntu", version = "26.04" },
     ]
   }
 
